@@ -28,6 +28,7 @@ class Contact extends Component {
                 <img
                   src={require(`../../assets/images/${ContactData["profile_image_path"]}`)}
                   alt=""
+                  width={"60%"}
                 />
               </div>
               <div className="contact-heading-text-div">
@@ -58,23 +59,23 @@ class Contact extends Component {
           <Fade bottom duration={1000} distance="40px">
             <div className="blog-heading-div">
               <div className="blog-heading-text-div">
-                <h1 className="blog-heading-text" style={{ color: theme.text }}>
+                {/* <h1 className="blog-heading-text" style={{ color: theme.text }}>
                   {blogSection["title"]}
-                </h1>
+                </h1> */}
                 <p
                   className="blog-header-detail-text subTitle"
                   style={{ color: theme.secondaryText }}
                 >
                   {blogSection["subtitle"]}
                 </p>
-                <div className="blogsite-btn-div">
+                {/* <div className="blogsite-btn-div">
                   <Button
                     text="Visit My Blogsite"
                     newTab={true}
                     href={blogSection.link}
                     theme={theme}
                   />
-                </div>
+                </div> */}
               </div>
               <div className="blog-heading-img-div">
                 {/* <img
@@ -85,16 +86,16 @@ class Contact extends Component {
               </div>
             </div>
           </Fade>
-          <Fade bottom duration={1000} distance="40px">
-            <div className="address-heading-div">
-              <div className="contact-heading-img-div">
-                {/* <img
+          {/* <Fade bottom duration={1000} distance="40px">
+            <div className="address-heading-div"> */}
+          {/* <div className="contact-heading-img-div"> */}
+          {/* <img
 											src={require(`../../assets/images/${addressSection["avatar_image_path"]}`)}
 											alt=""
 										/> */}
-                <AddressImg theme={theme} />
-              </div>
-              <div className="address-heading-text-div">
+          {/* <AddressImg theme={theme} /> */}
+          {/* </div> */}
+          {/* <div className="address-heading-text-div">
                 <h1
                   className="address-heading-text"
                   style={{ color: theme.text }}
@@ -127,9 +128,9 @@ class Contact extends Component {
                     theme={theme}
                   />
                 </div>
-              </div>
-            </div>
-          </Fade>
+              </div> */}
+          {/* </div>
+          </Fade> */}
         </div>
         <Footer theme={this.props.theme} onToggle={this.props.onToggle} />
         <TopButton theme={this.props.theme} />
